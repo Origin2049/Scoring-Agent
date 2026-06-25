@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Agent Scoring Platform - Server",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@asp/server", "exec", "tsx", "src/index.ts"],
+      "port": 3000
+    },
+    {
+      "name": "Agent Scoring Platform - Client",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@asp/client", "exec", "vite"],
+      "port": 5173
+    }
+  ]
+}

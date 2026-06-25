@@ -1,0 +1,23 @@
+{
+  "name": "agent-scoring-platform",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI Agent 评分平台 — 基于 CLASSic 五维模型",
+  "scripts": {
+    "dev": "pnpm --filter @asp/server dev & pnpm --filter @asp/client dev",
+    "build": "pnpm --filter @asp/shared build && pnpm --filter @asp/client build && pnpm --filter @asp/server build",
+    "start": "pnpm --filter @asp/server start",
+    "db:generate": "pnpm --filter @asp/server db:generate",
+    "db:migrate": "pnpm --filter @asp/server db:migrate",
+    "db:push": "pnpm --filter @asp/server db:push",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "check": "pnpm --filter @asp/shared build && pnpm --filter @asp/server build && pnpm --filter @asp/client build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

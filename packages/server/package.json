@@ -1,0 +1,26 @@
+{
+  "name": "@asp/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@asp/shared": "workspace:*",
+    "@hono/node-server": "^1.13.0",
+    "adm-zip": "^0.5.16",
+    "front-matter": "^4.0.2",
+    "hono": "^4.6.0",
+    "marked": "^15.0.0",
+    "uuid": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "tsx": "^4.19.0"
+  }
+}
